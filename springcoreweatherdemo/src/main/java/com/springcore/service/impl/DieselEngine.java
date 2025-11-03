@@ -1,17 +1,17 @@
-package com.springcore.comp;
+package com.springcore.service.impl;
+
+import com.springcore.service.Engine;
 
 public final class DieselEngine implements Engine
 {
     @Override
-    public String starts(String s)
+    public void start()
     {
         System.out.println("Diesel engine started");
-        return s;
     }
     @Override
-    public String stops(String journeyEnded)
+    public void stop()
     {
         System.out.println("Diesel engine stopped");
-        return journeyEnded;
     }
 }

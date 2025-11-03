@@ -1,16 +1,16 @@
-package com.springcore.comp;
+package com.springcore.service.impl;
+
+import com.springcore.service.Engine;
 
 public final class ElectricEngine implements Engine {
     @Override
-    public String starts(String s)
+    public void start()
     {
         System.out.println("Electric engine started");
-        return s;
     }
     @Override
-    public String stops(String journeyEnded)
+    public void stop()
     {
         System.out.println("Electric engine stopped");
-        return journeyEnded;
     }
 }

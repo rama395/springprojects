@@ -1,4 +1,6 @@
-package com.springcore.comp;
+package com.springcore.service.impl;
+
+import com.springcore.service.Courier;
 
 public final class BlueDart implements Courier {
     @Override

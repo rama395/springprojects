@@ -1,14 +1,13 @@
 package com.springcore.factory;
 
-import com.springcore.comp.BlueDart;
-import com.springcore.comp.Courier;
-import com.springcore.comp.Dtdc;
-import com.springcore.comp.Flipkart;
+import com.springcore.service.impl.BlueDart;
+import com.springcore.service.Courier;
+import com.springcore.service.impl.Dtdc;
 
-public class FlipkartFactory
+public class EngineFactory
 {
     //static factory method having factory pattern logic
-    public static Flipkart getInstance(String courierType)
+    public static Courier getInstance(String courierType)
     {
         //create dependent class obj
         Courier courier=null;
@@ -18,11 +17,8 @@ public class FlipkartFactory
             courier=new BlueDart();
         else throw
             new IllegalArgumentException("Invalid Courier Type");
-        //create target class obj
-        Flipkart flipkart=new Flipkart();
-        //assign dependent class obj to target class obj
-        flipkart.setCourier(courier);
-        return flipkart;
+
+        return courier;
 
     }
 

@@ -1,4 +1,4 @@
-package com.springcore.comp;
+package com.springcore.service;
 
 public interface Courier
 {

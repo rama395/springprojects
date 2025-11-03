@@ -1,4 +1,6 @@
-package com.springcore.comp;
+package com.springcore.service.impl;
+
+import com.springcore.service.Courier;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,7 +1,9 @@
-package com.springcore.comp;
+package com.springcore.service.impl;
 
 
-public final class Dtdc implements Courier{
+import com.springcore.service.Courier;
+
+public final class Dtdc implements Courier {
         @Override
         public String deliver(int oid)
         {
