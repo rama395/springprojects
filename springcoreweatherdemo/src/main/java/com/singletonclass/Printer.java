@@ -9,7 +9,7 @@ public class Printer
         System.out.println("Printer:0-param constructor");
     }
     //static factory method having singleton logic
-    public static Printer getINSTANCE()
+    public static synchronized Printer getINSTANCE()
     {
         if(INSTANCE==null)
         {
