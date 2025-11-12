@@ -1,7 +1,10 @@
 package com.springcore.service.impl;
 
 import com.springcore.service.Engine;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
+@Component("vehicle")
 public final class Vehicle
 {
     //HAS-A property

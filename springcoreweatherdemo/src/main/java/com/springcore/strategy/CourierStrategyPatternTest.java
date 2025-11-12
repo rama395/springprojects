@@ -2,13 +2,13 @@ package com.springcore.strategy;
 
 import com.springcore.service.Courier;
 import com.springcore.service.impl.Flipkart;
-import com.springcore.factory.EngineFactory;
+import com.springcore.factory.CourierFactory;
 
 public class CourierStrategyPatternTest
 {
     public static void main(String[] args) {
         //use factory pattern to target class obj
-        Courier courier= EngineFactory.getInstance("bluedart");
+        Courier courier= CourierFactory.getInstance("bDart");
         //create target class obj
         Flipkart flipkart=new Flipkart();
         //assign dependent class obj to target class obj
