@@ -1,7 +1,9 @@
 package com.springcore.service.impl;
 
 import com.springcore.service.Engine;
+import org.springframework.stereotype.Component;
 
+@Component("eEng")
 public final class ElectricEngine implements Engine {
     @Override
     public void start()

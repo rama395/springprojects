@@ -1,5 +1,6 @@
 package com.springcore.strategy;
 
+import com.springcore.factory.EngineFactory;
 import com.springcore.service.Engine;
 import com.springcore.service.impl.Vehicle;
 import com.springcore.factory.CourierFactory;
@@ -7,7 +8,7 @@ import com.springcore.factory.CourierFactory;
 public class EngineStrategyPatternTest {
     public static void main(String[] args) {
         //use Factory pattern to target class obj
-        Engine engine = CourierFactory.getInstance("dieselengine");
+        Engine engine = EngineFactory.getInstance("dieselengine");
 
         //create target class obj
         Vehicle vehicle = new Vehicle();

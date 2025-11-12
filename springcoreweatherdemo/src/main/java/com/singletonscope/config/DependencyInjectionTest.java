@@ -17,6 +17,7 @@ public class DependencyInjectionTest {
         System.out.println("generator==generator1 " + (generator == generator1));
         System.out.println("generator1==generator2 " + (generator1 == generator2));
         System.out.println("..........................");
+        generator.generateWishMessage("RAMA");
         LocalDateTime ldt1 = ctx.getBean("dt", LocalDateTime.class);
         LocalDateTime ldt2 = ctx.getBean("dt", LocalDateTime.class);
         System.out.println(ldt1.hashCode() + " " + ldt2.hashCode());

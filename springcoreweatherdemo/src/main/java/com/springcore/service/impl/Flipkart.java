@@ -1,10 +1,12 @@
 package com.springcore.service.impl;
 
 import com.springcore.service.Courier;
+import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.Random;
 
+@Component("fpkt")
 public final class Flipkart
 {
     private Courier courier;
