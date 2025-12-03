@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class SpringcoreweatherdemoApplication implements CommandLineRunner {
@@ -12,7 +13,7 @@ public class SpringcoreweatherdemoApplication implements CommandLineRunner {
     private WishMessageGenerator wishMessageGenerator;
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringcoreweatherdemoApplication.class, args);
+     ApplicationContext cxt= SpringApplication.run(SpringcoreweatherdemoApplication.class, args);
     }
 
     @Override
