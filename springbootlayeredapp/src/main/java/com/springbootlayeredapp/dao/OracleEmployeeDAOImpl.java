@@ -5,20 +5,13 @@ import com.springbootlayeredapp.exception.EmployeeException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
-@Repository("empDAO")
-public class EmployeeDAOImpl implements EmployeeDAO {
+@Repository("OracleempDAO")
+public class OracleEmployeeDAOImpl implements EmployeeDAO {
     private static final String GET_EMPS_QUERY = "SELECT EmployeeID,FirstName,LastName ,HireDate,Salary,Designation, DeptId from employee where designation in(?,?,?) order by designation";
     private static final String INSERT_EMP_SQL = "INSERT INTO Employee (EmployeeID, FirstName, LastName, Salary,designation,deptid)\n" +
             "VALUES (?, ?,?, ?,?, ?)";
