@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: shopping-service
+server:
+  port: 6061
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        # Expose all endpoints (use with caution in production)
+        include: "*"
+        # Alternatively, list specific endpoints
+        # include: "health,info,metrics,loggers"
+        # Explicitly exclude specific endpoints
+        # exclude: "env,beans"
+
+
+  endpoint:
+    heapdump:
+      enabled: true
