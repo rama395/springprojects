@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: EMPLOYEE-SERVICE
+          uri: lb://EMPLOYEE-SERVICE
+          predicates:
+            - Path=/employee-api/**
+        - id: CUSTOMER-SERVICE
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path=/customer-api/**
+server:
+  port: 9090
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: EMPLOYEE-SERVICE
+#          uri: http://localhost:9095/
+#          predicates:
+#            - Path=/employee-api/**
+#        - id: CUSTOMER-SERVICE
+#          uri: http://localhost:6064/
+#          predicates:
+#            - Path=/customer-api/**
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+
+
+
