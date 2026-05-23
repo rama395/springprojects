@@ -1,10 +1,13 @@
 package javaprograms.stringprograms;
 
-import static java.util.Arrays.sort;
 
+import java.util.Arrays;
+
+// Check if two strings are anagrams
+// Two strings are anagrams if they contain the same characters in a different order
 public class CheckStringAnagram {
     public static void main(String[] args) {
-        String s1 = "cinema";
+        String s1 = "listen";
         String s2 = "silent";
         s1 = s1.replaceAll("\\s", "");
         s2 = s2.replaceAll("\\s", "");
@@ -13,17 +16,26 @@ public class CheckStringAnagram {
         } else {
             char[] ch1 = s1.toCharArray();
             char[] ch2 = s2.toCharArray();
-            sort(ch1);
-            sort(ch2);
-            for (int i = 0; i < ch1.length; i++) {
-                if (ch1[i] != ch2[i]) {
-                    System.out.println("strings are not anagrams");
-                    return;
-                }
-                System.out.println("strings are anagrams");
-                break;
-
+            Arrays.sort(ch1);
+            Arrays.sort(ch2);
+            if (Arrays.equals(ch1,ch2))
+            {
+                System.out.println("these strings are anagrams");
             }
+            else {
+                System.out.println("strings are not anagrams");
+            }
+
+//            for (int i = 0; i < ch1.length; i++) {
+//                if (ch1[i] != ch2[i]) {
+//                    System.out.println("strings are not anagrams");
+//                    return;
+//                }
+//
+//            }
+//            System.out.println("these strings are anagrams");
+
+
         }
     }
 }
