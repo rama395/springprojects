@@ -19,6 +19,20 @@ public class ReverseStringUsingIterationAndRecursion {
         }
         return stringBuilder.toString();
     }
+//str="goodmorning"
+    //reverseStringUsingRecursion("oodmorning")+g
+    //reverseStringUsingRecursion("odmorning")+o
+//reverseStringUsingRecursion("dmorning")+o
+    //reverseStringUsingRecursion("morning")+d
+    //reverseStringUsingRecursion("orning")+m
+    //reverseStringUsingRecursion("rning")+o
+//reverseStringUsingRecursion("ning")+r
+    //reverseStringUsingRecursion("ing")+n
+//reverseStringUsingRecursion("ng")+i
+    //reverseStringUsingRecursion("g")+n      return "gn"
+
+    //return "g"
+
 
     private static String reverseStringUsingRecursion(String str) {
         if (str == null || str.length() <= 1) {
