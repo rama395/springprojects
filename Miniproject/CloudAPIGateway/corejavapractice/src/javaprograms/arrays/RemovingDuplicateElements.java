@@ -10,6 +10,8 @@ public class RemovingDuplicateElements
         System.out.println(Arrays.toString(arr2));
         int[] arr3=removeDuplicatesWithoutUsingHashSet(arr);
         System.out.println(Arrays.toString(arr3));
+        int[] arr4=removeDuplicatesWithoutUsingDuplicatesP(arr);
+        System.out.println(Arrays.toString(arr4));
     }
     private static int[] removeDuplicatesUsingHashSet(int[] arr)
     {
@@ -52,6 +54,33 @@ public class RemovingDuplicateElements
         for (int a:list)
         {
             arr2[i]=a;
+            i++;
+        }
+        return arr2;
+    }
+    private static int[] removeDuplicatesWithoutUsingDuplicatesP(int[] arr)
+    {
+        List<Integer> list=new ArrayList<>();
+        for (int i=0;i< arr.length;i++)
+        {
+            boolean isDuplicate=false;
+            for (int j=i+1;j< arr.length;j++)
+            {
+                if (arr[i]==arr[j])
+                {
+                    isDuplicate=true;
+                }
+            }
+            if (!isDuplicate)
+            {
+                list.add(arr[i]);
+            }
+        }
+        int[] arr2=new int[list.size()];
+        int i=0;
+        for (int b:list)
+        {
+            arr2[i]=b;
             i++;
         }
         return arr2;
