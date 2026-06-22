@@ -5,7 +5,7 @@ public class Test
     int x=70;
     public void m2()
     {
-        Interf i=()->{
+        interf i=()->{
             int x=80;
             System.out.println(x);
             System.out.println(this.x);
