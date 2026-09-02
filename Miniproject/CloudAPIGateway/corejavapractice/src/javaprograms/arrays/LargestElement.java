@@ -1,13 +1,13 @@
 package javaprograms.arrays;
 
-public class FirstLargestElement {
+public class LargestElement {
     public static void main(String[] args) {
         int arr[] = {16, 19, 25, 3, 5, 8, 10, 21};
         firstLargestElement(arr);
         secondLargestElement(arr);
 
     }
-
+//to find first largest element
     private static void firstLargestElement(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
@@ -19,7 +19,7 @@ public class FirstLargestElement {
         }
         System.out.println(max);
     }
-    
+    //to find second largest element
     private static void secondLargestElement(int[] arr)
     {
         int largest=arr[0];

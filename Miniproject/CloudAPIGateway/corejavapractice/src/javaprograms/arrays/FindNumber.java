@@ -10,6 +10,7 @@ public class FindNumber
         findNumber(arr,n);
         System.out.println(binarySearch(arr,n));
     }
+    //find a number in an array
     private static void findNumber(int[] arr,int n)
     {
         for (int a:arr)
@@ -17,12 +18,12 @@ public class FindNumber
             if (a==n)
             {
                 System.out.println("found:"+n);
-              return;
             }
         }
         System.out.println("not found");
 
     }
+    //find a number in an array using binary search
     private static int binarySearch(int[] arr,int n)
     {
         Arrays.sort(arr);

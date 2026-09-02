@@ -2,6 +2,7 @@ package javaprograms.arrays;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 public class OccuranceOfElements
 {
@@ -12,7 +13,7 @@ public class OccuranceOfElements
     }
     private static void occuranceOfElements(int[] arr)
     {
-        HashMap<Integer,Integer> countOfElements=new HashMap<>();
+        Map<Integer,Integer> countOfElements=new HashMap<>();
         for (int i:arr)
         {
             if (countOfElements.containsKey(i))

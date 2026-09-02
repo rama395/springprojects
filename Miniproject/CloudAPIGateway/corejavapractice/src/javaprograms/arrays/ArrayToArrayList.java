@@ -17,18 +17,18 @@ public class ArrayToArrayList {
     }
 
     private static void arrayToArrayListUsingAsList(String[] arr) {
-        ArrayList<String> list = new ArrayList<String>(Arrays.asList(arr));
+        List<String> list = new ArrayList<String>(Arrays.asList(arr));
         System.out.println(list);
     }
 
     private static void addAll(String[] arr) {
-        ArrayList<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>();
         Collections.addAll(list, arr);
         System.out.println(list);
     }
 
     private static void arraysAddAll(String[] arr) {
-        ArrayList<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>();
         list.addAll(Arrays.asList(arr));
         System.out.println(list);
     }
@@ -39,7 +39,7 @@ public class ArrayToArrayList {
     }
 
     private static void arrayListToArray() {
-        ArrayList<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>();
         list.add("JAVA");
         list.add("ANDROID");
         list.add("JSP");

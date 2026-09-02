@@ -2,6 +2,8 @@ package javaprograms.arrays;
 
 import java.util.Arrays;
 
+//find equality of 2 arrays..arrays lengths should be same & order also should be same
+
 public class EqualityOfTwoArrays
 {
     public static void main(String[] args) {

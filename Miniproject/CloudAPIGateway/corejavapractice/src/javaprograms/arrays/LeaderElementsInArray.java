@@ -1,5 +1,6 @@
 package javaprograms.arrays;
 
+//leader means if an element is greater than its rightmost elements & last rightmost element is always leader bcoz there r no elements to its right
 public class LeaderElementsInArray
 {
     public static void main(String[] args) {
@@ -8,15 +9,16 @@ public class LeaderElementsInArray
     }
     private static void leaderElementsInArray(int[] arr)
     {
-        int max=arr.length-1;
-        System.out.println(arr[arr.length-1]);
+        int rightMostEle=arr.length-1;
+        System.out.println(arr[rightMostEle]);
         for (int i=arr.length-2;i>=0;i--)
         {
-            if (arr[i]>max)
+            if (arr[i]>arr[i+1])
             {
-                System.out.println(arr[i]);
-                max=arr[i];
+
+
             }
+
         }
     }
 }
