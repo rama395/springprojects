@@ -1,12 +1,13 @@
 package javaprograms.stringprograms;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class DuplicateCharacters
 {
     public static void main(String[] args) {
-        String str="springboot";
-        //printDuplicateCharacters(str);
+        String str="adidas";
+        printDuplicateCharacters(str);
         printDuplicateCharactersUsingHashSet(str);
     }
 
@@ -31,7 +32,7 @@ public class DuplicateCharacters
     {
         char[] ch=str.toCharArray();
         System.out.println("Duplicate characters in the string: ");
-        HashSet<Character> characters=new HashSet<>();
+        Set<Character> characters=new HashSet<>();
         for (char c:ch)
         {
             if (characters.contains(c))
