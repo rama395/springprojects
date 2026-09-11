@@ -34,7 +34,6 @@ public class OccuranceOfCharacter
             else {
                 characterIntegerMap.put(c,1);
             }
-           // characterIntegerMap.put(c,characterIntegerMap.getOrDefault(c,0)+1);
         }
         int maxCount =0;
         char ch=str.charAt(0);

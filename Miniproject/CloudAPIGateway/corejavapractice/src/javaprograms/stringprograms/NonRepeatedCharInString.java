@@ -2,6 +2,7 @@ package javaprograms.stringprograms;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 public class NonRepeatedCharInString
 {
@@ -21,7 +22,7 @@ public class NonRepeatedCharInString
     }
 
     private static Character findFirstNonRepeatedChar(String str) {
-        HashMap<Character,Integer> characterIntegerHashMap=new HashMap<>();
+        Map<Character,Integer> characterIntegerHashMap=new HashMap<>();
         for (int i=0;i<str.length();i++)
         {
             char c=str.charAt(i);
@@ -33,7 +34,7 @@ public class NonRepeatedCharInString
                 characterIntegerHashMap.put(c,1);
             }
         }
-        //since Hashmap doesnot maintain order,to get characters by order
+        //since Hashmap does not maintain order,to get characters by order
         for (int i=0;i<str.length();i++)
         {
             char c=str.charAt(i);

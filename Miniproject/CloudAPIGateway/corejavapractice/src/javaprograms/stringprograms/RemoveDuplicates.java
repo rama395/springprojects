@@ -1,6 +1,7 @@
 package javaprograms.stringprograms;
 
 import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class RemoveDuplicates
 {
@@ -11,7 +12,7 @@ public class RemoveDuplicates
     }
     private static void removeDuplicatesLinkedHashSet(String str)
     {
-        LinkedHashSet<Character> linkedHashSet=new LinkedHashSet<>();
+        Set<Character> linkedHashSet=new LinkedHashSet<>();
         for (char c:str.toCharArray())
         {
            linkedHashSet.add(c);
