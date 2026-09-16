@@ -1,11 +1,12 @@
 package javaprograms.stringprograms;
 
+//given string is shuffle of 2 strings or not
 public class StringShuffling
 {
     public static void main(String[] args) {
         String s1="abc";
         String s2="def";
-        String s3="dbaecf";
+        String s3="adbecf";
         stringIsValidShuffle(s1,s2,s3);
 
     }
